@@ -29,8 +29,8 @@ Or use the standalone build (see Releases) — just double-click the executable
 
    Use **Change…** if it picks the wrong one, or if nothing was found; the
    choice is saved to a config file in the OS's standard per-user config
-   location (`%APPDATA%\BatchDenoise`, `~/Library/Application Support/BatchDenoise`,
-   or `~/.config/BatchDenoise`) so it works even if the app itself is
+   location (`%APPDATA%\BatchDenoiser`, `~/Library/Application Support/BatchDenoiser`,
+   or `~/.config/BatchDenoiser`) so it works even if the app itself is
    installed somewhere read-only.
 2. Pick a folder, optionally tick **Recursive**, press **Batch Denoiser**.
 3. Results are written to a `denoised` subfolder next to each source image
@@ -48,9 +48,9 @@ Or use the standalone build (see Releases) — just double-click the executable
 ## Files
 
 - `denoise_gui.py` — the GUI (plain Python 3, stdlib only).
-- `blender_denoise.py` — worker script that runs inside headless Blender;
+- `blender_denoiser.py` — worker script that runs inside headless Blender;
   can also be used standalone:
-  `blender.exe -b --factory-startup -P blender_denoise.py -- <folder> <0|1>`
+  `blender.exe -b --factory-startup -P blender_denoiser.py -- <folder> <0|1>`
 
 ## Building a standalone .exe (Windows)
 
@@ -58,10 +58,10 @@ Built with PyInstaller in **onedir** mode.
 
 ```
 pip install pyinstaller
-pyinstaller --onedir --windowed --name "BatchDenoise" ^
+pyinstaller --onedir --windowed --name "BatchDenoiser" ^
     --add-data "blender_denoise.py;." --noconfirm denoise_gui.py
 ```
 
-Output is `dist\BatchDenoise\BatchDenoise.exe` plus a `dist\BatchDenoise\_internal`
+Output is `dist\BatchDenoiser\BatchDenoiser.exe` plus a `dist\BatchDenoiser\_internal`
 folder — **both must ship together**; the exe alone won't run without
-`_internal`. Zip the whole `dist\BatchDenoise` folder when copying.
+`_internal`. Zip the whole `dist\BatchDenoiser` folder when copying.
