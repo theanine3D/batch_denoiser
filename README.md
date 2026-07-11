@@ -42,10 +42,7 @@ Or use the standalone build (see Releases) — just double-click the executable
 - Folders named `denoised` are skipped when scanning, so re-runs never
   re-denoise previous output.
 - Corrupt/unreadable images are logged as errors and the batch continues.
-- Requires Blender 4.x/5.x. Tested with Blender 5.1.1 on Windows; the
-  macOS/Linux detection paths are implemented but not verified on those
-  OSes (no such machine was available to test on) — if Blender isn't
-  auto-detected there, use **Change…** to point at it directly.
+- Requires Blender 4.x/5.x.
 
 ## Files
 
