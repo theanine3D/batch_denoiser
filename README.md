@@ -1,4 +1,4 @@
-# Batch Denoise (Blender)
+# Batch Denoiser (Blender)
 
 <img width="678" height="448" alt="image" src="https://github.com/user-attachments/assets/29c892fd-f8d1-4888-89fb-c2d65ccc53b3" />
 
@@ -33,7 +33,7 @@ Or use the standalone build (see Releases) — just double-click the executable
    location (`%APPDATA%\BatchDenoise`, `~/Library/Application Support/BatchDenoise`,
    or `~/.config/BatchDenoise`) so it works even if the app itself is
    installed somewhere read-only.
-2. Pick a folder, optionally tick **Recursive**, press **Batch Denoise**.
+2. Pick a folder, optionally tick **Recursive**, press **Batch Denoiser**.
 3. Results are written to a `denoised` subfolder next to each source image
    (existing outputs are overwritten; originals are never touched).
 
