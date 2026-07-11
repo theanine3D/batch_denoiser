@@ -82,7 +82,7 @@ def setup_scene():
         pass
 
     # Blender 5.x: the compositor is a node group assigned to the scene.
-    nt = bpy.data.node_groups.new('BatchDenoise', 'CompositorNodeTree')
+    nt = bpy.data.node_groups.new('BatchDenoiser', 'CompositorNodeTree')
     nt.interface.new_socket('Image', in_out='OUTPUT',
                             socket_type='NodeSocketColor')
     n_img = nt.nodes.new('CompositorNodeImage')
