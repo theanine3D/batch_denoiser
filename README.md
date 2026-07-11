@@ -13,8 +13,8 @@ Run from source:
 python denoise_gui.py
 ```
 
-Or use the standalone build (see Releases) — just double-click `BatchDenoise.exe`,
-no Python installation required.
+Or use the standalone build (see Releases) — just double-click the executable
+(ie. `BatchDenoise.exe`), no Python installation required.
 
 1. The app auto-detects Blender using platform-appropriate strategies:
    - **Windows**: Program Files → `.blend` file association (registry) →
