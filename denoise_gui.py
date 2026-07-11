@@ -1,4 +1,4 @@
-# Batch Denoise - denoise folders of images using Blender's compositor
+# Batch Denoiser - denoise folders of images using Blender's compositor
 # Denoise node (OpenImageDenoise) via headless Blender.
 #
 # Run with a normal Python 3 installation (stdlib only):
@@ -50,11 +50,11 @@ def _config_dir():
     somewhere read-only (Program Files, /Applications, /usr/share, ...)."""
     if sys.platform == 'win32':
         base = os.environ.get('APPDATA') or os.path.expanduser('~')
-        return os.path.join(base, 'BatchDenoise')
+        return os.path.join(base, 'BatchDenoiser')
     if sys.platform == 'darwin':
-        return os.path.expanduser('~/Library/Application Support/BatchDenoise')
+        return os.path.expanduser('~/Library/Application Support/BatchDenoiser')
     base = os.environ.get('XDG_CONFIG_HOME') or os.path.expanduser('~/.config')
-    return os.path.join(base, 'BatchDenoise')
+    return os.path.join(base, 'BatchDenoiser')
 
 
 CONFIG_PATH = os.path.join(_config_dir(), 'config.json')
@@ -394,7 +394,7 @@ class DenoiseApp:
         self.done_counts = None
         self.tail = []  # last raw output lines, for diagnostics
 
-        root.title('Batch Denoise (Blender)')
+        root.title('Batch Denoiser (Blender)')
         root.minsize(560, 420)
 
         frame = ttk.Frame(root, padding=10)
