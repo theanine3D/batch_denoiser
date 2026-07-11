@@ -1,6 +1,6 @@
 # Batch Denoiser (Blender)
 
-<img width="678" height="448" alt="image" src="https://github.com/user-attachments/assets/29c892fd-f8d1-4888-89fb-c2d65ccc53b3" />
+<img width="676" height="444" alt="image" src="https://github.com/user-attachments/assets/cf4ec62f-7b63-48c1-af13-a305ddaa1a7f" />
 
 A tool for fast batch denoising images using Blender's compositor Denoise node
 (via OpenImageDenoise). A headless Blender process is launched once in the
