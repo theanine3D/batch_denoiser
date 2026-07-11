@@ -32,7 +32,7 @@ Or use the standalone build (see Releases) — just double-click the executable
    location (`%APPDATA%\BatchDenoiser`, `~/Library/Application Support/BatchDenoiser`,
    or `~/.config/BatchDenoiser`) so it works even if the app itself is
    installed somewhere read-only.
-2. Pick a folder, optionally tick **Recursive**, press **Batch Denoiser**.
+2. Pick a folder, optionally tick **Recursive**, press **Batch Denoise**.
 3. Results are written to a `denoised` subfolder next to each source image
    (existing outputs are overwritten; originals are never touched).
 
